@@ -10,7 +10,7 @@ df = pd.read_csv("data.csv")
 
 # Convert diagnosis to numeric
 label_encoder = LabelEncoder()
-df['diagnosis'] = label_encoder.fit_transform(df['diagnosis'])  # M = 1, B = 0
+df['diagnosis'] = label_encoder.fit_transform(df['diagnosis'])  # M = 1, B = 0 
 
 # Select only 8 important features
 selected_features = [
